@@ -1,0 +1,119 @@
+
+<title>GOBI ARTS AND SCIENCE COLLEGE </title>
+<head>
+<h2> <marquee><b> <dd><img src="d.png" width="31"
+height="31" border="0" alt="text describing
+the image" />GOBI ARTS AND SCIENCE COLLEGE 
+கோபி கலை மற்றும் அறிவியல் கல்லூரி</b> </marquee></h2><b>
+</head>
+<h5>
+</h5>
+</html>
+<center><img src="d.png" width="81"
+height="81" border="0" alt="text describing
+the image" /></center>
+<center><font face="Times New Roman" size="+9"
+color="red">GOBI ARTS AND SCIENCE COLLEGE</font></center>
+<body style="background-color:	#D3D3D3;">
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color:white;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#DEPT {background-color: HOME;}
+#LIBARY {background-color: 
+HOME;}
+#SPORTS{background-color: HOME;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('DEPT', this, 'default')">DEPT</button>
+<button class="tablink" onclick="openPage('LIBARY', this, 'default')" id="defaultOpen">LIBARY</button>
+<button class="tablink" onclick="openPage('SPORTS', this, 'default')">SPORTS</button>
+<button class="tablink" onclick="openPage('About', this, 'default')">About</button>
+
+<div id="DEPT" class="tabcontent">
+  <h3>DEPT</h3>
+  <p>Home is where the heart is..</p>
+</div>
+
+<div id="LIBARY" class="tabcontent">
+  <h3>LIBARY</h3>
+  <p>Some news this fine day!</p> 
+</div>
+
+<div id="SPORTS" class="tabcontent">
+  <h3>SPORTS</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
+
+
+
+
